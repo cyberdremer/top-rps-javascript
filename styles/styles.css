@@ -1,0 +1,44 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.header {
+    margin-top: 10px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.play-area-header {
+    text-align: center;
+}
+
+.selections {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    border-width: thick;
+    border-color: black;
+}
+.weapon {
+    max-width: 200px;
+}
+
+.text {
+    text-align: center;
+}
+
+.game-state {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.game-state-header {
+   align-items: center;
+   text-align: center;
+    
+}
