@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="javascript/helper.js"></script>
-    <script src="javascript/game.js"></script>
+    <script src="javascript/helper.js" defer></script>
+    <script src="javascript/game.js" defer></script>
     <title>The Odin Project Tic Tac Toe</title>
 </head>
 <body>
@@ -15,24 +15,41 @@
             <div class="play-area-header">Select your weapon!</div>
             <div class="selections">
                 <div class="weapon">
-                    <button id="rock"><img src="placeholder.png" alt="A Large Rock"></button>
+                    <input type="image" src="images/vecteezy_raised-fist-icon-emoji-sticker_27713689.png" name="saveForm" class="btTxt submit" id="rock" />
                     <div class="text">A large and powerful rock!</div>
                 </div>
                 <div class="weapon">
-                    <button id="paper"><img src="placeholder.png" alt="A Large Piece of Paper"></button>
+                    <input type="image" src="images/vecteezy_raised-fist-icon-emoji-sticker_27713689.png" name="saveForm" class="btTxt submit" id="paper" />
                     <div class="text">A large and powerful piece of expensive paper!</div>
                 </div>
                     
                 <div class="weapon">
-                    <button id="scissors"><img src="placeholder.png" alt="A Large Pair Of Scissors"></button>
+                    <input type="image" src="images/vecteezy_raised-fist-icon-emoji-sticker_27713689.png" name="saveForm" class="btTxt submit" id="scissors" />
                     <div class="text">A large and powerful pair of scissors!</div>
                 </div>
                 </div>
 
             <div class="game-state">
-                <div class="game-state-header">Human Score</div>
-                <div class="game-state-header">Computer's Choice</div>
-                <div class="game-state-header">Computer's Score</div>
+                <div class="game-state-header">
+                    <span>
+                        Human's Score
+                    </span>
+                    <span>
+                        Computer's Choice
+                    </span>
+                    <span>
+                        Computer's Score
+                    </span>
+                </div>
+            
+                <div class="game-information">
+                    <span id="human-score">
+                    </span>
+                    <span id="computer-choice"></span>
+                    <span id="computer-score">
+
+                    </span>
+                </div>
 
             </div>
                 
