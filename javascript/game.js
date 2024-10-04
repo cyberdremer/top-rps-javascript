@@ -50,15 +50,20 @@ function playRound(humanChoice, computerChoice){
 }
 
 
-function playGame(){
-    let computerChoice, humanChoice;
-    computerScore = 0;
-    humanScore = 0;
-    for(let i = 0; i < 5; i++){
-        humanChoice = getHumanChoice();
-        computerChoice = getComputerChoice();
-        playRound(humanChoice, computerChoice);
+const container = document.querySelector("body");
+const weaponSelections = document.querySelector(".selections");
+const humanScoreSpan = document.querySelector('#human-score');
+const computerScoreSpan = document.querySelector('#computer-score');
+const computerChoiceSpan = document.querySelector('#computer-choice');
+
+
+weaponSelections.addEventListener('click', (Event) =>{
+    let selection = Event.target;
+    if(selection.id === "rock" || selection.id === "paper" || selection.id === "scissors"){
+        let computerChoice = getComputerChoice();
+        playRound(selection.id, computerChoice);
+        computerChoiceSpan.textContent = computerChoice;
+        computerScoreSpan.textContent = computerScore;
+        humanScoreSpan.textContent = humanScore;
     }
-    console.log("The computer has won: " + computerScore + " times.");
-    console.log("The human has won: " + humanScore + " times.");
-}
+})
