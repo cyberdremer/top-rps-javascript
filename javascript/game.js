@@ -62,7 +62,7 @@ weaponSelections.addEventListener('click', (Event) =>{
     if(selection.id === "rock" || selection.id === "paper" || selection.id === "scissors"){
         let computerChoice = getComputerChoice();
         playRound(selection.id, computerChoice);
-        computerChoiceSpan.textContent = computerChoice;
+        computerChoiceSpan.textContent = computerChoice.toUpperCase();
         computerScoreSpan.textContent = computerScore;
         humanScoreSpan.textContent = humanScore;
     }
