@@ -1,3 +1,9 @@
+
+body {
+    font-family: monospace;
+    background-color: #b3dff0;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -7,9 +13,35 @@
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin: 10px;
+    background-color: #8c9aa3;
     margin-top: 10px;
     font-size: 30px;
     font-weight: bold;
+}
+
+.header, .play-area {
+    width: 60%;
+    border-radius: 10px;
+    box-shadow: 10px 10px #a9cee8;
+}
+
+.header, .play-area-header {
+    font-size: 40px;
+    font-weight: bold;
+    
+}
+
+.play-area {
+    display: flex;
+    flex-direction: column;
+    background-color: #54a2d2;
+    gap: 30px;
+    
 }
 
 .play-area-header {
@@ -18,7 +50,7 @@
 
 .selections {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     gap: 50px;
     border-width: thick;
     border-color: black;
@@ -26,19 +58,38 @@
 .weapon {
     max-width: 200px;
 }
+input {
+    max-width: 200px;
+}
 
 .text {
+    font-size: 20px;
+    font-weight: bold;
     text-align: center;
 }
 
 .game-state {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    gap: 10px
 
 }
 
 .game-state-header {
+    display: flex;
+    justify-content: space-between;
    align-items: center;
    text-align: center;
     
+}
+.game-information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+span {
+    text-align: center;
 }
